@@ -36,7 +36,6 @@ it('works if implementing an err-res callback instead', async () => {
   });
 
   const res = await bar();
-  // but instead, we exceed the timeout ://
-
   expect(res).toEqual(100);
+  // works!
 });
